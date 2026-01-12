@@ -1,5 +1,5 @@
 ---
-title: "Blog"
+title: "Blogs"
 ---
 
-Short notes on systems, process, and building calm software.
+My Blogs.
