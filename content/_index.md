@@ -6,4 +6,4 @@ Welcome to my early-2000s inspired corner of the web. Everything here is plain H
 
 This site is a hub for my work and writing. If you like fast-loading, readable pages and a classic Mac OS X feel, you are in the right place.
 
-Head to the portfolio for project snapshots or the blog for thoughts and notes.
+Head to the portfolio for project snapshots—from HIPAA-grade systems to embedded builds—and the blog for notes.
