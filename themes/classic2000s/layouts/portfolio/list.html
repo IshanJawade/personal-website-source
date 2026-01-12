@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section>
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}{{ . }}{{ end }}
+  {{ range sort .Pages "Params.year" "desc" }}
+    <article class="card">
+      <div class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+      <div class="card-meta">{{ .Params.year }} · {{ .Params.category }}</div>
+      <div class="card-excerpt">{{ .Params.summary }}</div>
+    </article>
+  {{ end }}
+</section>
+{{ end }}

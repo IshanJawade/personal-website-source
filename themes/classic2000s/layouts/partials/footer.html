@@ -1,0 +1,6 @@
+<footer>
+  © {{ now.Format "2006" }} {{ .Site.Title }} ·
+  {{ with .Site.Params.github }}<a href="{{ . }}">GitHub</a>{{ end }}
+  {{ if and .Site.Params.github .Site.Params.linkedin }} · {{ end }}
+  {{ with .Site.Params.linkedin }}<a href="{{ . }}">LinkedIn</a>{{ end }}
+</footer>

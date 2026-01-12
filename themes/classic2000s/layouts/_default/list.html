@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section>
+  <h1>{{ .Title }}</h1>
+  {{ range .Pages }}
+    <article class="card">
+      <div class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+      {{ with .Date }}<div class="card-meta">{{ .Format "Jan 2, 2006" }}</div>{{ end }}
+      {{ with .Params.summary }}<div class="card-excerpt">{{ . }}</div>{{ else }}{{ with .Summary }}<div class="card-excerpt">{{ . }}</div>{{ end }}{{ end }}
+    </article>
+  {{ end }}
+</section>
+{{ end }}

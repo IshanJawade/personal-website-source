@@ -1,0 +1,9 @@
+{{ define "main" }}
+<section>
+  <h1>{{ .Title }}</h1>
+  {{ with .Date }}<div class="card-meta">{{ .Format "Jan 2, 2006" }}</div>{{ end }}
+  <div class="content-body">
+    {{ .Content }}
+  </div>
+</section>
+{{ end }}

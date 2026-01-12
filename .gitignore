@@ -1,0 +1,11 @@
+# Hugo output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# OS/editor
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
