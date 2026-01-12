@@ -1,8 +1,8 @@
-baseURL = "https://ishanjawade.github.io/personal-website"
+baseURL = "https://ishanjawade.github.io/personal-website/"
 languageCode = "en-us"
 title = "Ishan"
 theme = "classic2000s"
-relativeURLs = true
+relativeURLs = false
 
 [params]
 tagline = "Personal site · Projects · Writing"

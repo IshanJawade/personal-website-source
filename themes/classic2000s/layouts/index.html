@@ -2,6 +2,6 @@
 <section>
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  <p><a href="{{ "/portfolio/" | relURL }}">See the portfolio</a> · <a href="{{ "/blog/" | relURL }}">Read the blog</a></p>
+  <p><a href="{{ "portfolio/" | absURL }}">See the portfolio</a> · <a href="{{ "blog/" | absURL }}">Read the blog</a></p>
 </section>
 {{ end }}
