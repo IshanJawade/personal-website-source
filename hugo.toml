@@ -1,4 +1,4 @@
-baseURL = "https://ishanjawade.github.io/personal-website/"
+baseURL = "https://ishanjawade.github.io/"
 languageCode = "en-us"
 title = "Ishan"
 theme = "classic2000s"
