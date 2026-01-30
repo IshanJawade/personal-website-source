@@ -1,13 +1,49 @@
 baseURL = "https://ishanjawade.github.io/"
 languageCode = "en-us"
-title = "Ishan"
-theme = "classic2000s"
+title = "Ishan Jawade"
+theme = "PaperMod"
 relativeURLs = false
+pagination.pagerSize = 10
+mainSections = []
+enableRobotsTXT = true
 
 [params]
+env = "production"
+title = "Ishan Jawade"
+description = "Personal site · Projects · Writing"
+keywords = ["portfolio", "blog", "embedded", "ai"]
+author = "Ishan Jawade"
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeSwitcher = false
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowRssButtonInSectionTermList = true
+ShowToc = true
+TocOpen = false
+ShowPageNums = true
 tagline = "Personal site · Projects · Writing"
-github = "https://github.com/ishan"
-linkedin = "https://www.linkedin.com/in/ishan"
+github = "https://github.com/IshanJawade"
+linkedin = "https://www.linkedin.com/in/ishanjawade/"
+
+[params.homeInfoParams]
+Title = "Hi, I'm Ishan"
+Content = "Full-stack engineer building clean web experiences, resilient services, and embedded/IoT systems. Dive into selected projects below, or read notes on shipping pragmatic software."
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/IshanJawade"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/ishanjawade/"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:ishanjawade@outlook.com"
 
 [menu]
 	[[menu.main]]
