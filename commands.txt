@@ -1,0 +1,9 @@
+# to clean public directory
+hugo --cleanDestinationDir --minify
+
+# to run the hugo server
+hugo server -D
+
+# to export public contents to hosted repo
+hugo --destination "<directory-path>"
+
