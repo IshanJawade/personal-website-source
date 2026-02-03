@@ -1,0 +1,32 @@
+.contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+    align-items: center;
+    margin: 1rem 0 2rem;
+}
+
+.contact-icon {
+    display: inline-flex;
+    padding: 0.4rem;
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: var(--radius);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.contact-icon:hover,
+.contact-icon:focus-visible {
+    color: var(--content);
+    transform: translateY(-2px);
+}
+
+.contact-icon:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+}

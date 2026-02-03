@@ -1,0 +1,57 @@
+{{- $page := . -}}
+{{- $params := site.Params.homeInfoParams -}}
+{{- $title := "" -}}
+{{- $content := "" -}}
+{{- $contentIsHTML := false -}}
+{{- $align := "" -}}
+
+{{- with $params }}
+  {{- if .Title }}
+    {{- $title = .Title -}}
+  {{- end }}
+  {{- if .Content }}
+    {{- $content = .Content -}}
+  {{- end }}
+  {{- if .AlignSocialIconsTo }}
+    {{- $align = .AlignSocialIconsTo -}}
+  {{- end }}
+{{- end }}
+
+{{- if not $title }}
+  {{- with $page.Params.heroTitle }}
+    {{- $title = . -}}
+  {{- else }}
+    {{- $title = $page.Title -}}
+  {{- end }}
+{{- end }}
+
+{{- if not $content }}
+  {{- with $page.Params.heroContent }}
+    {{- $content = . -}}
+  {{- else }}
+    {{- if $page.Content }}
+      {{- $content = $page.Content -}}
+      {{- $contentIsHTML = true -}}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{- if or $title $content }}
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>{{ $title | markdownify }}</h1>
+    </header>
+    {{- if $content }}
+    <div class="entry-content">
+        {{- if $contentIsHTML -}}
+            {{ $content | safeHTML }}
+        {{- else -}}
+            {{ $content | markdownify }}
+        {{- end }}
+    </div>
+    {{- end }}
+    <footer class="entry-footer">
+        {{- partial "social_icons.html" (dict "align" $align) }}
+    </footer>
+</article>
+{{- end -}}

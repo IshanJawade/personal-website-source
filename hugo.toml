@@ -7,6 +7,10 @@ pagination.pagerSize = 10
 mainSections = []
 enableRobotsTXT = true
 
+[markup]
+	[markup.goldmark.renderer]
+		unsafe = true
+
 [params]
 env = "production"
 title = "Ishan Jawade"
@@ -19,19 +23,19 @@ disableThemeSwitcher = false
 ShowReadingTime = true
 ShowShareButtons = false
 ShowPostNavLinks = true
-ShowBreadCrumbs = true
+ShowBreadCrumbs = false
 ShowCodeCopyButtons = true
-ShowRssButtonInSectionTermList = true
+ShowRssButtonInSectionTermList = false
 ShowToc = true
 TocOpen = false
 ShowPageNums = true
 tagline = "Personal site · Projects · Writing"
 github = "https://github.com/IshanJawade"
 linkedin = "https://www.linkedin.com/in/ishanjawade/"
+customCSS = ["css/extended/contact.css"]
 
 [params.homeInfoParams]
-Title = "Hi, I'm Ishan"
-Content = "Full-stack engineer building clean web experiences, resilient services, and embedded/IoT systems. Dive into selected projects below, or read notes on shipping pragmatic software."
+AlignSocialIconsTo = "left"
 
 [[params.socialIcons]]
 name = "github"
@@ -57,6 +61,6 @@ url = "mailto:ishanjawade@outlook.com"
 	weight = 2
 
 	[[menu.main]]
-	name = "Blog"
+	name = "Blogs"
 	url = "/blog/"
 	weight = 3

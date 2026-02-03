@@ -1,5 +1,5 @@
 ---
-title: "Hi I am Ishan Jawade"
+title: "Home"
+heroTitle: "Hi, I'm Ishan"
+heroContent: "I’m a Tech Enthusiast with a strong foundation in both hardware and software, driven by curiosity and a passion for building systems that work end-to-end from firmware to cloud infrastructure.  Check out my Portfolio and Blogs."
 ---
-
-I am a software engineer specializing in building reliable and efficient systems. Welcome to my personal site where I share my projects and thoughts on software development.

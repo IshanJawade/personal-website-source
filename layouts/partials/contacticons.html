@@ -1,0 +1,14 @@
+{{- /* Shared contact icon list for templates and shortcodes */ -}}
+{{- $links := slice
+    (dict "name" "email" "url" "mailto:ishanjawade@outlook.com" "aria" "Email Ishan")
+    (dict "name" "github" "url" "https://github.com/IshanJawade" "aria" "GitHub profile" "external" true)
+    (dict "name" "linkedin" "url" "https://www.linkedin.com/in/ishanjawade/" "aria" "LinkedIn profile" "external" true)
+    (dict "name" "cv" "url" "/files/resume.pdf" "aria" "Download resume" "download" true)
+-}}
+<div class="contact-icons" role="list">
+  {{- range $links }}
+  <a class="contact-icon" href="{{ .url }}" role="listitem" aria-label="{{ .aria }}"{{ if .external }} target="_blank" rel="noopener"{{ end }}{{ if .download }} download{{ end }}>
+    {{- partial "svg.html" . -}}
+  </a>
+  {{- end }}
+</div>
