@@ -8,7 +8,7 @@ enableRobotsTXT = true
 
 [params]
 author = "Ishan Jawade"
-description = "Personal site · Projects · Writing"
+description = "Personal · Projects · Blogs"
 
 [menu]
   [[menu.main]]
