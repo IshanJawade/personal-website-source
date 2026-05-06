@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-inner">
+    {{ with .Params.heroGreeting }}<p class="hero-greeting">{{ . }}</p>{{ end }}
+    <h1 class="hero-name">{{ .Params.heroName | default site.Title }}</h1>
+    <p class="hero-sub">{{ .Params.heroContent }}</p>
+    <div class="hero-btns">
+      <a class="btn btn-primary" href="/about/">View About</a>
+      <a class="btn btn-ghost" href="/blog/">Read Blog</a>
+    </div>
+  </div>
+</section>
+{{ end }}

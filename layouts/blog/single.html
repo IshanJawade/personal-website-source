@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="article-wrap">
+  <a class="back-link" href="/blog/">← Blog</a>
+  <h1>{{ .Title }}</h1>
+  {{ with .Date }}
+  <p class="article-meta">{{ .Format "January 2, 2006" }}</p>
+  {{ end }}
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

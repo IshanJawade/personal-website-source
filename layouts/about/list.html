@@ -1,0 +1,84 @@
+{{ define "main" }}
+
+{{/* ── Page header ── */}}
+<section>
+  <div class="section-inner">
+    <p class="section-eyebrow">About</p>
+    <h1 class="about-name">{{ site.Params.author }}</h1>
+    {{ with .Params.intro }}
+    <p class="about-intro">{{ . }}</p>
+    {{ end }}
+  </div>
+</section>
+
+{{/* ── Experience ── */}}
+<section class="bg-alt">
+  <div class="section-inner">
+    <h2 class="section-title">Experience</h2>
+    <div class="exp-list">
+      {{ range .Params.experience }}
+      <div class="exp-entry">
+        <div class="exp-header">
+          <div>
+            <p class="exp-company">{{ .company }}</p>
+            <h3 class="exp-role">{{ .role }}</h3>
+          </div>
+          <span class="exp-period">{{ .period }}</span>
+        </div>
+        {{ with .bullets }}
+        <ul class="exp-bullets">
+          {{ range . }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* ── Skills ── */}}
+<section>
+  <div class="section-inner">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-table">
+      {{ range .Params.skills }}
+      <div class="skills-row">
+        <span class="skills-label">{{ .category }}</span>
+        <span class="skills-value">{{ delimit .items " · " }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* ── Education ── */}}
+<section class="bg-alt">
+  <div class="section-inner">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-list">
+      {{ range .Params.education }}
+      <div class="edu-entry">
+        <div class="edu-main">
+          <h3 class="edu-school">{{ .school }}</h3>
+          <p class="edu-degree">{{ .degree }}</p>
+          <p class="edu-location">{{ .location }}</p>
+        </div>
+        <span class="edu-period">{{ .period }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* ── Contact ── */}}
+<section>
+  <div class="section-inner">
+    <p class="section-eyebrow">Get in touch</p>
+    <h2 class="section-title">Contact</h2>
+    {{ partial "contacticons.html" . }}
+  </div>
+</section>
+
+{{ end }}

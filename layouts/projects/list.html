@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section>
+  <div class="section-inner">
+    <p class="section-eyebrow">Work</p>
+    <h1 class="section-title">Projects</h1>
+    <div class="proj-list">
+      {{ range $i, $p := .Pages }}
+      <a class="proj-row" href="{{ $p.Permalink }}">
+        <span class="proj-num">{{ printf "%02d" (add $i 1) }}</span>
+        <div class="proj-body">
+          <p class="proj-tag">{{ $p.Params.category }}</p>
+          <h2 class="proj-title">{{ $p.Title }}</h2>
+          <p class="proj-summary">{{ $p.Params.summary }}</p>
+        </div>
+        <div class="proj-right">
+          {{ with $p.Params.year }}<span class="proj-year">{{ . }}</span>{{ end }}
+          <span class="proj-arrow">→</span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

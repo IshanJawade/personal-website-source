@@ -1,66 +1,27 @@
 baseURL = "https://ishanjawade.github.io/"
-languageCode = "en-us"
 title = "Ishan Jawade"
-theme = "PaperMod"
-relativeURLs = false
-pagination.pagerSize = 10
-mainSections = []
 enableRobotsTXT = true
 
 [markup]
-	[markup.goldmark.renderer]
-		unsafe = true
+  [markup.goldmark.renderer]
+    unsafe = true
 
 [params]
-env = "production"
-title = "Ishan Jawade"
-description = "Personal site · Projects · Writing"
-keywords = ["portfolio", "blog", "embedded", "ai"]
 author = "Ishan Jawade"
-DateFormat = "January 2, 2006"
-defaultTheme = "auto"
-disableThemeSwitcher = false
-ShowReadingTime = true
-ShowShareButtons = false
-ShowPostNavLinks = true
-ShowBreadCrumbs = false
-ShowCodeCopyButtons = true
-ShowRssButtonInSectionTermList = false
-ShowToc = true
-TocOpen = false
-ShowPageNums = true
-tagline = "Personal site · Projects · Writing"
-github = "https://github.com/IshanJawade"
-linkedin = "https://www.linkedin.com/in/ishanjawade/"
-customCSS = ["css/extended/contact.css"]
-
-[params.homeInfoParams]
-AlignSocialIconsTo = "left"
-
-[[params.socialIcons]]
-name = "github"
-url = "https://github.com/IshanJawade"
-
-[[params.socialIcons]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/ishanjawade/"
-
-[[params.socialIcons]]
-name = "email"
-url = "mailto:ishanjawade@outlook.com"
+description = "Personal site · Projects · Writing"
 
 [menu]
-	[[menu.main]]
-	name = "Home"
-	url = "/"
-	weight = 1
+  [[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 1
 
-	[[menu.main]]
-	name = "Portfolio"
-	url = "/portfolio/"
-	weight = 2
+  [[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 2
 
-	[[menu.main]]
-	name = "Blogs"
-	url = "/blog/"
-	weight = 3
+  [[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 3
