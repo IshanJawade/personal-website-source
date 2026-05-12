@@ -141,6 +141,16 @@ img { max-width: 100%; height: auto; display: block; }
   flex-wrap: wrap;
 }
 
+.contact-bar {
+  padding: 40px 22px;
+  background: var(--bg);
+}
+
+.contact-bar .contact-strip {
+  margin-top: 0;
+  justify-content: center;
+}
+
 
 /* ─── BUTTONS ───────────────────────────────────────────────── */
 
