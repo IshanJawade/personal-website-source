@@ -1,6 +1,6 @@
 ---
 title: "About"
-intro: "Software engineer with a strong foundation in both hardware and software & from embedded firmware to cloud infrastructure."
+intro: "Software engineer with a strong foundation in both hardware and software"
 
 experience:
   - company: "Cal State Fullerton"
