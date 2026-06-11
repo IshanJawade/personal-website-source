@@ -1,8 +1,17 @@
 ---
 title: "About"
-intro: "Software engineer with a strong foundation in both hardware and software"
+intro: "Engineer. Programmer. Gamer." 
 
 experience:
+  - company: "Saayam For All"
+    role: "Full-Stack Developer"
+    period: "April 2026 – Present"
+    bullets:
+    - Develop REST APIs for the Request and V olunteer microservices in Java Spring Boot on a cloud-native platform that connects people.
+    - Implement help-request CRUD, user/volunteer profile management, role-based access, AOP logging, global exception handling, and i18n using Spring Data JPA with PostgreSQL.
+    - Integrate AWS API Gateway, S3, and ElastiCache (Redis) for caching, document endpoints with Swagger/OpenAPI.
+    - Containerize with Docker, deploy on Kubernetes, and ship via GitHub Actions CI/CD.
+
   - company: "Cal State Fullerton"
     role: "Concession Crew Member"
     period: "Mar 2024 – Dec 2025"

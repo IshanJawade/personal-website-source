@@ -2,5 +2,6 @@
 title: "Home"
 heroGreeting: "Hi, I'm"
 heroName: "iShan"
-heroContent: "I'm a tech enthusiast and hardware tinkerer. As a true \"Full-Stack Developer,\" I build systems that work end-to-end, from firmware and device drivers to backend, frontend, and cloud infrastructure. When I'm not coding, you'll find me gaming, exploring new hardware, or going down rabbit holes learning how technology actually works. Check out my Portfolio and Blogs."
+heroContent: "I'm a tech enthusiast and full-stack developer who enjoys building systems end to end from firmware, device drivers, and low-level software to backend services, frontend interfaces, cloud infrastructure, and AI agents. When I'm not coding, you'll usually find me gaming, exploring new technologies, or going down rabbit holes about the mysteries of the universe. Check out my portfolio and blogs to see what I've been building and learning.
+"
 ---

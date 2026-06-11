@@ -22,6 +22,6 @@ description = "Personal · Projects · Blogs"
   weight = 2
 
   [[menu.main]]
-  name = "Blog"
+  name = "Blogs"
   url = "/blog/"
   weight = 3
