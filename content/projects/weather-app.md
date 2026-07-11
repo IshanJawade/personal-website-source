@@ -1,6 +1,7 @@
 ---
 title: "Weather App"
 year: 2022
+date: 2022-06-01
 category: "Web"
 summary: "React front-end with Spring Boot and MongoDB backend for real-time weather." 
 ---

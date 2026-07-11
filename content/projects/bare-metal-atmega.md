@@ -1,6 +1,7 @@
 ---
 title: "Bare-Metal LED on ATmega328P"
 year: 2023
+date: 2023-05-01
 category: "Embedded"
 summary: "Register-level C firmware to drive GPIO and blink LEDs on the ATmega328P." 
 ---

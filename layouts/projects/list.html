@@ -4,7 +4,7 @@
     <p class="section-eyebrow">Work</p>
     <h1 class="section-title">Projects</h1>
     <div class="proj-list">
-      {{ range $i, $p := .Pages }}
+      {{ range $i, $p := .Pages.ByDate.Reverse }}
       <a class="proj-row" href="{{ $p.Permalink }}">
         <span class="proj-num">{{ printf "%02d" (add $i 1) }}</span>
         <div class="proj-body">

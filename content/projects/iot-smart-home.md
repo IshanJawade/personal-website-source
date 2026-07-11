@@ -1,6 +1,7 @@
 ---
 title: "IoT Smart Home (ESP32 + Raspberry Pi)"
 year: 2023
+date: 2023-09-01
 category: "IoT"
 summary: "ESP32-controlled relays and sensors with Raspberry Pi processing over MQTT." 
 ---
