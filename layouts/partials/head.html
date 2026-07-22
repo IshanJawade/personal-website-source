@@ -4,4 +4,6 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
 {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ if not .Description }}{{ with site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}{{ end }}
+<link rel="icon" type="image/png" href="/files/favicon.png">
+<link rel="apple-touch-icon" href="/files/favicon.png">
 <link rel="stylesheet" href="/css/main.css">
