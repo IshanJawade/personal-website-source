@@ -50,12 +50,12 @@ skills:
     items: ["STM32", "ESP32", "ATmega328P", "Socket programming"]
 
 education:
-  - school: "California State University, Fullerton"
+  - degree: "Master of Science in Computer Science"
+    school: "California State University, Fullerton"
     location: "USA"
-    degree: "Master of Science in Computer Science (GPA 3.66)"
     period: "2024 – 2025"
-  - school: "MIT ADT University, Pune"
+  - degree: "Bachelor of Technology in Computer Science and Engineering"
+    school: "MIT ADT University, Pune"
     location: "India"
-    degree: "Bachelor of Technology in Computer Science and Engineering"
     period: "2017 – 2021"
 ---
