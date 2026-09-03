@@ -731,9 +731,8 @@ section.bg-alt { background: var(--bg-alt); }
 .edu-entry:first-child { border-top: 1px solid var(--border); }
 
 .edu-school {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-size: 16px;
+  color: var(--text-muted);
   margin-bottom: 5px;
 }
 
@@ -746,8 +745,9 @@ section.bg-alt { background: var(--bg-alt); }
 }
 
 .edu-degree {
-  font-size: 16px;
-  color: var(--text-muted);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   margin-bottom: 3px;
 }
 

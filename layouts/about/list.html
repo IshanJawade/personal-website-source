@@ -61,8 +61,8 @@
       {{ range .Params.education }}
       <div class="edu-entry">
         <div class="edu-main">
-          <h3 class="edu-school">{{ .school }}</h3>
-          <p class="edu-degree">{{ .degree }}</p>
+          <h3 class="edu-degree">{{ .degree }}</h3>
+          <p class="edu-school">{{ .school }}</p>
           <p class="edu-location">{{ .location }}</p>
           {{ with .coursework }}
           <p class="edu-coursework"><strong>Coursework:</strong> {{ . }}</p>
