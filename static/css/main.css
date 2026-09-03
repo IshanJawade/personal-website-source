@@ -693,17 +693,22 @@ section.bg-alt { background: var(--bg-alt); }
 }
 
 /* Skills spec table */
-.skills-table { }
+.skills-table {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
 
 .skills-row {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 32px;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--border);
-  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 120px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
 }
-.skills-row:first-child { border-top: 1px solid var(--border); }
 
 .skills-label {
   font-size: 12px;
@@ -866,7 +871,8 @@ section.bg-alt { background: var(--bg-alt); }
 
   .exp-header { flex-direction: column; gap: 4px; }
   .edu-entry { flex-direction: column; gap: 8px; }
-  .skills-row { grid-template-columns: 1fr; gap: 6px; }
+  .skills-table { grid-template-columns: 1fr; }
+  .skills-row { min-height: 0; }
 
   .proj-row {
     grid-template-columns: 36px 1fr;
