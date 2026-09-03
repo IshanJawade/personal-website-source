@@ -737,6 +737,14 @@ section.bg-alt { background: var(--bg-alt); }
   margin-bottom: 5px;
 }
 
+.edu-period {
+  font-size: 14px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
 .edu-degree {
   font-size: 16px;
   color: var(--text-muted);
@@ -748,13 +756,18 @@ section.bg-alt { background: var(--bg-alt); }
   color: var(--text-muted);
 }
 
-.edu-period {
+.edu-coursework {
+  max-width: 760px;
+  margin-top: 14px;
   font-size: 14px;
+  line-height: 1.6;
   color: var(--text-muted);
-  white-space: nowrap;
-  flex-shrink: 0;
-  padding-top: 4px;
 }
+
+.edu-coursework strong {
+  color: var(--text);
+}
+
 
 
 /* ─── PROJECTS LIST ──────────────────────────────────────────── */

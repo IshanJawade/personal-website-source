@@ -60,11 +60,11 @@ education:
     school: "California State University, Fullerton"
     location: "USA"
     period: "2024 – 2025"
-    Coursework: Neural Networks, Computer Networks, Network Security Fundamentals, Data Structures and Algorithms, Cyber Forensics, Web Backend Engineering, Advanced Software Process, Systems Software Standards and Requirements, Software Engineering.
+    coursework: Neural Networks, Computer Networks, Network Security Fundamentals, Data Structures and Algorithms, Cyber Forensics, Web Backend Engineering, Advanced Software Process, Systems Software Standards and Requirements, Software Engineering.
 
   - degree: "Bachelor of Technology in Computer Science and Engineering"
     school: "MIT ADT University, Pune"
     location: "India"
     period: "2017 – 2021"
-    Coursework: Artificial Intelligence, Machine Learning, Cloud Computing, Computer Networks, Basic Electronics Engineering, Natural Language Processing, Programming in C, Object Oriented Programming in C++, Computer Organization and Architecture, Microprocessor and Interfacing, Advanced Data Structures and Algorithms, Computer Graphics, Theory of Computation, System Programming and Operating Systems, Database Management Systems
+    coursework: Artificial Intelligence, Machine Learning, Cloud Computing, Computer Networks, Basic Electronics Engineering, Natural Language Processing, Programming in C, Object Oriented Programming in C++, Computer Organization and Architecture, Microprocessor and Interfacing, Advanced Data Structures and Algorithms, Computer Graphics, Theory of Computation, System Programming and Operating Systems, Database Management Systems
 ---
