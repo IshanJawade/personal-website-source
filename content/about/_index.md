@@ -1,6 +1,6 @@
 ---
 title: "About"
-intro: "Engineer. Programmer. Gamer." 
+intro: "Enthusiast. Engineer. Programmer. Gamer." 
 
 experience:
   - company: "Saayam For All"
