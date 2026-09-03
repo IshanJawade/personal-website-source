@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section>
+  <div class="section-inner">
+    <p class="section-eyebrow">Research</p>
+    <h1 class="section-title">Publications</h1>
+    {{ if .Pages }}
+    <ul class="post-list">
+      {{ range .Pages.ByDate.Reverse }}
+      <li class="post-item">
+        <a href="{{ with .Params.url }}{{ . }}{{ else }}{{ .Permalink }}{{ end }}"{{ with .Params.url }} target="_blank" rel="noopener"{{ end }}>
+          <div>
+            <div class="post-title">{{ .Title }}</div>
+            {{ with .Params.venue }}
+            <div class="post-summary">{{ . }}</div>
+            {{ end }}
+            {{ with .Params.summary }}
+            <div class="post-summary">{{ . }}</div>
+            {{ end }}
+          </div>
+          {{ with .Date }}<span class="post-date">{{ .Format "Jan 2006" }}</span>{{ end }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}
+    <p style="color: var(--text-muted);">No publications yet.</p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
